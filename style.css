@@ -1,0 +1,108 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Container principal da calculadora */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Grupo de input (label + campo) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Botão de cálculo */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Área de resultado */
+#resultado {
+    margin-top: 25px;
+    text-align: left;
+    padding: 20px;
+    background-color: #e9f5ff;
+    border: 1px solid #b3d7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #004085;
+    min-height: 30px;
+}
+
+#resultado h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #004085;
+    border-bottom: 1px solid #b3d7ff;
+    padding-bottom: 10px;
+}
+
+#resultado p {
+    margin: 5px 0;
+}
+
+#resultado .total {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error {
+    color: #D8000C !important;
+    background-color: #FFD2D2;
+    border: 1px solid #D8000C;
+    padding: 15px;
+    text-align: center;
+}
